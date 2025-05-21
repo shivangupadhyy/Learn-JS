@@ -22,7 +22,7 @@
 // Object
 // Functions
 
-// const heros = ["spider", "batman", "superman"];
+const heros = ["spider", "batman", "superman"];
 
 // const myObj = {
 //     name : "shivang",
@@ -34,7 +34,7 @@
 //     console.log("hello");
 // }
 
-// console.log(typeof heros); // function); 
+console.log(typeof heros); // object; 
 
 
 // console.log(typeof myObj); // object
@@ -62,8 +62,8 @@
 
 // anotherName = "Ayushi";
 
-// console.log(anotherName); // shivang
-// console.log(myName); // Ayushi
+// console.log(anotherName); // AYUSHI
+// console.log(myName); // SHIVANG
 
 // let userOne ={
 //     email : "user@gmail.com",
@@ -75,3 +75,14 @@
 // userTwo.email = "shivang@gmail.com";
 // console.log(userOne.email); //
 // console.log(userTwo.email); //
+
+let userName = {
+    email: "Ayushi@gmail.com",
+    age: 22,
+}
+
+let userName2 = userName;
+
+userName2.email = "Shivang@gmail.com";
+console.log(userName.email); //
+console.log(userName2.email); //
