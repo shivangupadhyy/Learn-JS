@@ -32,3 +32,46 @@ function  loginUserMessages(username = "Shivang"){
 
 // console.log(loginUserMessages("Ayushi"))
 // // console.log(loginUserMessages())// it will console undefined
+
+
+// function calculateCartPrice (val1, val2, ...num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(200, 400, 300 , 400, 500))// so 200= val1, 400 = val2, and rest goes to rest operator 
+
+
+// function calculateCartPrice (...num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(200, 400, 300))
+
+const user = {
+    username : "Shivang",
+    price : 199
+}
+
+function handleObject(anyobject){
+    console.log(`this is my name ${anyobject.username} and price are : ${anyobject.price}`)
+}
+
+// handleObject(user)
+
+handleObject({
+    username: "Shivang",
+    price: 299
+})
+
+const newArr = [200, 300, 400, 500]
+
+function returnSecondValue(Arr){
+    // console.log(`second index value : ${Arr[1]}`)
+    return Arr[1]
+
+}
+
+// returnSecondValue(newArr)
+// console.log(returnSecondValue(newArr))
+console.log(returnSecondValue([200, 400, 600, 800 ]))
+
+
+
