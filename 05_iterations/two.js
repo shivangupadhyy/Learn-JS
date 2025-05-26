@@ -2,8 +2,8 @@
 // --------------------------------------------------------
 
 // WHILE LOOP
-// Syntax: while(condition){ ... }
-// Used when the number of iterations is not known in advance.
+// Syntax: while(condition)//{ ... }
+// // Used when the number of iterations is not known in advance.
 // let i = 0
 // while (i <= 10) {
 //     console.log(`value of index ${i}`)
@@ -21,7 +21,7 @@
 // DO-WHILE LOOP
 // Syntax: do { ... } while(condition)
 // The code block is executed at least once, even if the condition is false at the start.
-let score = 1
+let score = 11
 do{
     console.log(`score is ${score}`)
     score ++

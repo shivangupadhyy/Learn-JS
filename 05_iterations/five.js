@@ -23,9 +23,9 @@ function printMe(item) {
 // coding.forEach(printMe)
 
 // Example 4: Accessing value, index, and array in forEach
-// coding.forEach((item, index, arr) => {
-//     console.log(item, index, arr)
-// })
+coding.forEach((item, index, arr) => {
+    console.log(item, index, arr)
+})
 
 // forEach with array of objects
 const myCoding = [
@@ -35,7 +35,7 @@ const myCoding = [
 ]
 
 myCoding.forEach((item) => {
-    console.log(item.languageFileName)
+    // console.log(item.languageFileName)
 })
 
 // INTERVIEW TIPS:

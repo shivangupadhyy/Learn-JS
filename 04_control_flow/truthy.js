@@ -44,3 +44,4 @@ iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80")
 // - Use Object.keys(obj).length === 0 to check for empty objects.
 // - Nullish coalescing (??) is different from || (it only checks for null/undefined, not other falsy values).
 // - Ternary operator is a shorthand for if-else.
+

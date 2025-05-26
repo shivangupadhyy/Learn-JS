@@ -11,14 +11,18 @@ const myObject = {
 }
 
 for (const key in myObject) {
-    // console.log(`${key} shortcut is for ${myObject[key]}`)
+    //  console.log(`${key} shortcut is for ${myObject[key]}`)
     // Iterates over keys: js, cpp, rb, swift
 }
 
+for(const key in myObject){
+    //console.log(`objects keys are: ${key} and ${myObject[key]}`)
+}
+
 // for...in can be used with arrays, but it is not recommended because it iterates over keys (indexes), not values.
-const programming = ["js", "rb", "swift", "java", "]cpp"]
+const programming = ["js", "rb", "swift", "java", "cpp"]
 for (const key in programming) {
-    //console.log(programming[key])
+    console.log(programming[key])
     // Iterates over indexes: 0, 1, 2, 3, 4
 }
 

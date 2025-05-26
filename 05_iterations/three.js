@@ -5,7 +5,7 @@
 // Example 1: Iterating over an array
 const arr = [1, 2, 3, 4, 5]
 for (const num of arr) {
-    // console.log(num);
+    console.log(num);
     // Each element of the array is accessed one by one
 }
 
@@ -28,9 +28,15 @@ map.set("fr", "France")
 
 // Iterating over a Map using for...of
 for (const [key, value] of map) {
-    console.log(key, '-:', value)
+   // console.log(key, '-:', value)
     // Destructuring is used to get key and value directly
 }
+
+
+// for (const [key, value] of map) {
+//     console.log(key, '-:', value)
+    
+// }
 
 // Note: for...of does NOT work directly on plain objects
 const myObject = {
