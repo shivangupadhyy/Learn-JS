@@ -8,7 +8,7 @@
 
 ## project 1
 
-```
+```javascript
 
 // Interview Notes for Project 1 (Color Changer):
 // - Demonstrates DOM manipulation and event handling
@@ -57,9 +57,68 @@ btn.forEach(function (button){
 # project 2 // Bmi calculator
 
 
+```javascript
+
+
+// - Shows form handling and input validation
+// - Demonstrates preventDefault() for form submission
+// - Handles type conversion and data validation
+// - Implements business logic with conditional statements
+// - Shows different ways to update DOM content (innerHTML vs textContent)
+
+const form = document.querySelector('form');
+// Note: Don't get input values here as they'll be empty on page load
+// const height =  parseInt(document.querySelector('#height').value)
+
+form.addEventListener('submit', function (e) {
+  // Prevent form from submitting to server
+  e.preventDefault();
+
+  // Get input values and convert to integers
+  const height = parseInt(document.querySelector('#height').value);
+  const weight = parseInt(document.querySelector('#weight').value);
+  const results = document.querySelector('#results');
+
+  // Input validation
+  if (height < 0 || isNaN(height)) {
+    results.innerHTML = 'please give a valid height';
+  }
+  if (weight < 0 || isNaN(height)) {
+    results.innerHTML = 'please give a valid weight';
+  } else {
+    // Calculate BMI: weight(kg) / height(m)²
+    // Height is converted from cm to m by dividing by 100
+    const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+    
+    // Display results based on BMI ranges
+    if (bmi <= 18.6) {
+      results.innerHTML = `<span> Under Weight BMI : ${bmi}</span>`;
+    }
+    if (bmi > 18.6 && bmi < 24.9) {
+      results.textContent = `normal Weight BMI : ${bmi}`;
+    } else {
+      results.textContent = `over weigth ${bmi}`;
+    }
+  }
+});
+
+// Key Interview Topics:
+// 1. Event Handling: click events, form submission
+// 2. DOM Selection: querySelectorAll vs querySelector
+// 3. Event Object: properties and usage
+// 4. Form Validation: handling user input
+// 5. Type Conversion: parseInt, isNaN
+// 6. DOM Updates: innerHTML vs textContent
+// 7. Mathematical Operations: BMI calculation
+// 8. Conditional Logic: if statements
+// 9. Template Literals: string interpolation
+// 10. Best Practices: preventing form submission, input validation
 ```
 
-c// Interview Notes for Project 2 (BMI Calculator):
+
+# project 3 
+```javascript
+// Interview Notes for Project 2 (BMI Calculator):
 // - Shows form handling and input validation
 // - Demonstrates preventDefault() for form submission
 // - Handles type conversion and data validation
