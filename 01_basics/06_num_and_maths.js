@@ -14,7 +14,7 @@ const otherNumber = 123.853;
 // console.log(otherNumber.toPrecision(4));
 
 const hundred = 100000;
-// console.log(hundred.toLocaleString('en-IN'));
+console.log(hundred.toLocaleString('en-IN'));
 
 
 //++++++++++++++++++++++++++++Maths+++++++++++++++++++++++++++++++
@@ -29,11 +29,12 @@ const hundred = 100000;
 // console.log(Math.max(1, 2, 3, 4, 5)); // 5 it returns the maximum value from the given numbers
 
 
-console.log(Math.random()); // 0.123456789 it returns a random number between 0 and 1
-console.log((Math.random() * 10) + 1); // 5.123456789 it returns a random number between 1 and 10
+// console.log(Math.random()); // 0.123456789 it returns a random number between 0 and 1
+// console.log((Math.random() * 10) + 1); // 5.123456789 it returns a random number between 1 and 10
 
-console.log(Math.floor(Math.random()*10 +1)); // 5 it returns a random number between 1 and 10
+// console.log(Math.floor(Math.random()*10 +1)); // 5 it returns a random number between 1 and 10
 
 const min = 20;
 const max = 30;
-console.log(Math.floor(Math.random()* (max- min + 1)) + min)// 20 it returns a random number between 20 and 30
+// console.log(Math.floor(Math.random()* (max- min + 1)) + min)// 20 it returns a random number between 20 and 30
+console.log(Math.floor(Math.random() * (max - min + 1)) + min)

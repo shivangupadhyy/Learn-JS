@@ -8,6 +8,7 @@
 
 const myArr = [0 ,1 , 2 , 3 , 4 , 5];
 // console.log(myArr[0]); // 0
+// console.log(myArr[1])
 const myHeros = ['spiderman' , 'batman' , 'superman'];
 // console.log(myHeros[2]); // spiderman
 
@@ -36,14 +37,14 @@ const myArr2 = new Array(1, 2, 3, 4, 5);
 // console.log(typeof newArr); // string\
 
 //slice and splice
-// console.log("A", myArr);
+console.log("A", myArr);
 
 
-// const myn1 = myArr.slice(1, 3); // slice the array from index 1 to 3 it includes 1 and 2 excludes 3
-// console.log("B", myArr); // original array is not changed
-// console.log(myn1)
+const myn1 = myArr.slice(1, 3); // slice the array from index 1 to 3 it includes 1 and 2 excludes 3
+console.log("B", myArr); // original array is not changed
+console.log(myn1)
 
-// const myn2 = myArr.splice(1, 3)
-// console.log("C", myArr) // original array is changed
+ const myn2 = myArr.splice(1, 3)
+ console.log("C", myArr) // original array is changed
 // // it will remove the elements from the original array and return the removed elements
-// console.log(myn2) // it will remove the elements from the original array and return the removed elements
+ console.log(myn2) // it will remove the elements from the original array and return the removed elements

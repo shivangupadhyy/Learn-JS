@@ -7,7 +7,7 @@
 
 
  const gameName = new String('codemonk');
-
+//  console.log(typeof gameName)
 // console.log(gameName[0]); // c
 // console.log(gameName.__proto__); // String {}
 
@@ -45,20 +45,20 @@
 // console.log(1 + "2" + 1); // 121
 // console.log("1" + 1 + 1); // 111     
 
-let name = new String('shivang');
-console.log(name.slice(-7, 4)); // shi
-console.log(name.substring(0,4)); // shiv   
+// let name = new String('shivang');
+// console.log(name.slice(-7, 4)); // shi
+// console.log(name.substring(0,4)); // shiv   
 
-const newString = "   helloworld    ";
-console.log(newString);
-console.log(newString.trim()); // helloworld\\
+// const newString = "   helloworld    ";
+// console.log(newString);
+// console.log(newString.trim()); // helloworld\\
 
-const url = "https://www.google.com/shivang%20Upadhyay";
+// const url = "https://www.google.com/shivang%20Upadhyay";
 
-url.replace('%20',"-");
-console.log(url.replace('%20',"-")); // https://www.google.com/shivang-Upadhyay     
-console.log(url.includes('MCA'));
+// url.replace('%20',"-");
+// console.log(url.replace('%20',"-")); // https://www.google.com/shivang-Upadhyay     
+// console.log(url.includes('MCA'));
 
-console.log(gameName.split('-'));
+// console.log(gameName.split('-'));
 
 
