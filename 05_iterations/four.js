@@ -10,10 +10,11 @@ const myObject = {
     swift: "swift by apple"
 }
 
-for (const key in myObject) {
-    //  console.log(`${key} shortcut is for ${myObject[key]}`)
-    // Iterates over keys: js, cpp, rb, swift
-}
+
+// for (const key in myObject) {
+//      console.log(`${key} shortcuts are ${myObject[key]}`)
+//     // Iterates over keys: js, cpp, rb, swift
+// }
 
 for(const key in myObject){
     //console.log(`objects keys are: ${key} and ${myObject[key]}`)
@@ -22,7 +23,7 @@ for(const key in myObject){
 // for...in can be used with arrays, but it is not recommended because it iterates over keys (indexes), not values.
 const programming = ["js", "rb", "swift", "java", "cpp"]
 for (const key in programming) {
-    console.log(programming[key])
+    // console.log(programming[key])
     // Iterates over indexes: 0, 1, 2, 3, 4
 }
 
@@ -41,3 +42,7 @@ for (const key in programming) {
 // - for...of is better for arrays, strings, and maps.
 // - Map and Set are not enumerable with for...in.
 // - If you need both key and value from an object, use for...in and access value with obj[key].
+
+
+// You can also use Object.keys() with .length to find the number of properties (length) of an object.
+// console.log(Object.keys(myObject).length) // Output: 4

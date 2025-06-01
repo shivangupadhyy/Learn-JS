@@ -28,12 +28,13 @@ const emptyObj = {}
 if(Object.keys(emptyObj).length === 0 ){
     console.log("object is empty")
 }
+// Object.keys(emptyObj).length
 
 // NULLISH COALESCING OPERATOR (??)
 // Used to provide a default value when the left side is null or undefined.
 let val1;
 val1 = null ?? 10 ?? 15 // returns 10, as null triggers the default
-
+console.log(val1)
 // TERNARY OPERATOR
 // Syntax: condition ? exprIfTrue : exprIfFalse
 const iceTeaPrice = 100;

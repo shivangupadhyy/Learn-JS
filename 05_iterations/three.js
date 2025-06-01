@@ -3,11 +3,11 @@
 // The for...of loop is used to iterate over iterable objects like arrays, strings, maps, sets, etc.
 
 // Example 1: Iterating over an array
-const arr = [1, 2, 3, 4, 5]
-for (const num of arr) {
-    console.log(num);
-    // Each element of the array is accessed one by one
-}
+// const arr = [1, 2, 3, 4, 5]
+// for (const num of arr) {
+//     console.log(num);
+//     // Each element of the array is accessed one by one
+// }
 
 // Example 2: Iterating over a string
 const greeting = "hello world!"
@@ -28,7 +28,7 @@ map.set("fr", "France")
 
 // Iterating over a Map using for...of
 for (const [key, value] of map) {
-   // console.log(key, '-:', value)
+   console.log(key, '-:', value)
     // Destructuring is used to get key and value directly
 }
 

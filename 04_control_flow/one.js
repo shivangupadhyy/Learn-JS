@@ -12,11 +12,11 @@
 // Operators: <, >, <=, >=, ==, !=, ===, !==
 
 // Example 2: Variable scope in if block
-// const score = 200;
-// if(score > 300){
-//     let power = "fly" // 'let' is block scoped
-//     console.log(`user power ${power}`)
-// }
+const score = 200;
+if(score > 300){
+    let power = "fly" // 'let' is block scoped
+    console.log(`user power ${power}`)
+}
 // console.log(`user power  : ${power}`) // This will throw an error because 'power' is not accessible outside the block
 
 // Example 3: Implicit scope (not recommended)

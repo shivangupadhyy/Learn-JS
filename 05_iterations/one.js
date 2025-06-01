@@ -13,6 +13,14 @@ for (let i = 0; i <= 10; i++) {
     // console.log(element)
 }
 
+// for(let i = 0; i < 10; i++){
+//     const element = i;
+//     if(element == 5){
+//         console.log("5 is the best number")
+//     }
+//     console.log(element)
+// }
+
 
 //   for(let i =0; i<=10; i++){
 //     const element = i;
@@ -31,6 +39,15 @@ for (let i = 1; i <= 10; i++){
     }
 }
 
+// for(let i = 0; i<=10 ; i++){
+//     console.log(`inner loop ${i}`)
+
+//     for(let j = 1 ; j<=10; j++){
+//         // console.log(`inner loop value ${i} and inner loop ${j}`)
+//         console.log(i + "*" + j + "=" + i*j) 
+//     }
+// }
+
 
 
 for(let i=1; i<=10; i++){
@@ -42,10 +59,16 @@ for(let i=1; i<=10; i++){
 }
 
 // LOOPING THROUGH ARRAYS
-let myArray = [ "flash", "SuperMan", "SpiderMan"]
-for(let i = 0; i < myArray.length; i++){
-    const element = myArray[i]
-    //console.log(element)
+// let myArray = [ "flash", "SuperMan", "SpiderMan"]
+// for(let i = 0; i < myArray.length; i++){
+//     const element = myArray[i]
+//     console.log(element)
+// }
+
+let myArrays = ["flash", "shivang", "ayyushi"]
+for(let i = 0; i< myArrays.length; i++){
+    const element = myArrays[i]
+    // console.log(element)
 }
 
 
@@ -58,13 +81,13 @@ for(let i=0; i<myArr.length; i++){
 // BREAK AND CONTINUE
 // break: exits the loop completely
 // continue: skips the current iteration and continues with the next
-for (let i = 1; i<=20; i++){
-    if (i == 5){
-        console.log(`detected 5`)
-        break;
-    }
-    console.log(`value of i ${i}`)
-}
+// for (let i = 1; i<=20; i++){
+//     if (i == 5){
+//         console.log(`detected 5`)
+//         break;
+//     }
+//     console.log(`value of i ${i}`)
+// }
 
 
 // for(let i =0 ; i<=10; i++){
@@ -74,6 +97,15 @@ for (let i = 1; i<=20; i++){
 //     }
 //     console.log(i)
 // }
+
+for(let  i = 0 ; i<15; i++){
+    if(i == 7){
+        console.log('7  is detected ')
+        continue;
+    }
+    console.log(i)
+}
+
 
 
 // for (let i = 1; i<=20; i++){
