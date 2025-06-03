@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container" style="padding: 20px; background-color: #f0f0f0;">
+  <p>Parent container (clickable)</p>
+  <a id="google" href="https://www.google.com">Click me (Google Link)</a>
+</div>
+</div>
+</body>
+<script>
+    // Parent element event
+document.getElementById('container').addEventListener('click', function () {
+  console.log('Parent container clicked');
+});
+
+// Child element event (anchor tag)
+document.getElementById('google').addEventListener('click', function (e) {
+  e.preventDefault(); // stops the link from opening
+  e.stopPropagation(); // stops the parent event from triggering
+  console.log('Google link clicked (but navigation stopped)');
+});
+</script>
+</html>

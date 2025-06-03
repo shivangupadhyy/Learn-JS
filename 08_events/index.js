@@ -2,6 +2,10 @@
 //     alert("owl clicked ")
 // }it is not that much good approach
 
+// document.getElementById('owl').onclick = function() {
+//     alert('owl clicked')
+// }
+
 //attachEvent()
 // jQuery - on 
 // important topics of events explain : type, timestamps, defaultprevented, target, toElement , srcElement , currentTarget, clientX, clientY, screenX, screenY, altKEy, ctrlKey, shiftkey, keyCode
@@ -9,6 +13,14 @@
 // document.getElementById('owl').addEventListener('click', function(e){
 //     console.log(e)
 // }, false) //event propogation , event bubbling, and event captureing
+
+// document.getElementById('owl').addEventListener('click',function(e){
+//     console.log(e.target)
+// }, false)
+
+// document.getElementById('images').addEventListener('click', function(e){
+//     alert("ul is clicked");
+// }, false)
 
 // document.getElementById('images').addEventListener('click', function(e){
 //     console.log('clicked inside the ul');
@@ -26,16 +38,25 @@
 //     console.log('google is clicked')
 // }, false)
 
+// document.querySelector('#images').addEventListener('click', function(e){
+//     console.log(e.target.tagName)
+//     if(e.target.tagName === 'IMG'){
+//         console.log(e.target.id)
+//         let removeIt = e.target.parentNode
+//     removeIt.remove()
+//     }
+
+    
+// }, false)
+
 document.querySelector('#images').addEventListener('click', function(e){
     console.log(e.target.tagName)
     if(e.target.tagName === 'IMG'){
         console.log(e.target.id)
-        let removeIt = e.target.parentNode
-    removeIt.remove()
+        let removeId = e.target.parentNode
+        removeId.remove()
     }
-
-    
-}, false)
+})
 
 
 
@@ -83,16 +104,16 @@ document.querySelector('#images').addEventListener('click', function(e){
 // }, false)
 
 // ===================== Practical Example: Event Delegation =====================
-document.querySelector('#images').addEventListener('click', function(e){
-    // e.target is the element that was actually clicked
-    console.log(e.target.tagName)
-    if(e.target.tagName === 'IMG'){
-        // If an image was clicked, remove its parent <li> from the DOM
-        console.log(e.target.id)
-        let removeIt = e.target.parentNode
-        removeIt.remove()
-    }
-}, false)
+// document.querySelector('#images').addEventListener('click', function(e){
+//     // e.target is the element that was actually clicked
+//     console.log(e.target.tagName)
+//     if(e.target.tagName === 'IMG'){
+//         // If an image was clicked, remove its parent <li> from the DOM
+//         console.log(e.target.id)
+//         let removeIt = e.target.parentNode
+//         removeIt.remove()
+//     }
+// }, false)
 
 // Interview Notes:
 // - Use addEventListener for robust event handling.
