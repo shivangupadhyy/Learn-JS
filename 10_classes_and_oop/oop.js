@@ -26,7 +26,7 @@ function User(username, loginCount, signedIn){
 
     // Method defined for each instance
     this.greeting = function(){
-        console.log(`welcome ${this.username}`)
+        // console.log(`welcome ${this.username}`)
     }
 
     return this // Not required when using 'new', but doesn't hurt
