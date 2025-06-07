@@ -1,6 +1,18 @@
-<!-- Notes and explanations for interview and new learners:
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <button>Button Clicked</button>
+</body>
+<script>
+   
+    <!-- Notes and explanations for interview and new learners:
 This example demonstrates how to use the .bind() method to ensure the correct 'this' context in event handlers, especially in classes.
--->
+
 
 <script>
     // Define a class named React
@@ -27,7 +39,7 @@ This example demonstrates how to use the .bind() method to ensure the correct 't
     const app = new React()
 </script>
 
-<!--
+
 Key Explanations:
 - In JavaScript classes, 'this' inside event handlers can lose its context (not refer to the class instance).
 - .bind(this) ensures that 'this' inside handleClick always refers to the class instance, not the button or global object.
@@ -35,3 +47,5 @@ Key Explanations:
 - Always use .bind(this) (or arrow functions) when passing class methods as event handlers.
 - This example is useful for understanding event handling, class context, and the use of .bind().
 -->
+</script>
+</html> 
