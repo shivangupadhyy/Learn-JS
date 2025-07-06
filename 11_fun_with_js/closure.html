@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    // --- JavaScript Closures: Interview & Beginner Notes ---
+// This section demonstrates closures in JavaScript with practical and interview-focused examples.
+// A closure is when an inner function has access to variables from its outer (enclosing) function, even after the outer function has finished executing.
+// Real-world analogy: A closure is like a backpack that an inner function carries, keeping access to variables from its parent scope.
+
+// Example 1: Basic closure
+// function init(){
+//     let name = "Morzilla"; // 'name' is local to init
+//     function displayName(){
+//         // displayName() forms a closure over 'name'
+//         console.log(name); // uses variable from parent function
+//     }
+//     displayName(); // Output: Morzilla
+// }
+// init();
+
+// Example 2: Nested closures and scope
+// function outer(){
+//     let userName = "Shivang";
+//     // console.log("outer",secret) // Would error: secret not defined yet
+//     function secondInner(){
+//         let secret = "my123";
+//         console.log(userName); // Can access userName from outer
+//     }
+//     function inner(){
+//         console.log(userName); // Can access userName
+//         // console.log(secret); // Would error: secret not in this scope
+//     }
+//     secondInner();
+//     inner();
+// }
+// outer();
+
+// Example 3: Returning a function (closure persists after outer returns)
+// function makeFun(){
+//     const name = 'shivang';
+//     function displayName(){
+//         console.log(name);
+//     }
+//     return displayName; // Returns the inner function, which keeps access to 'name'
+// }
+// const myFunc = makeFun();
+// myFunc(); // Output: shivang
+
+// Example 4: Closures in event handlers
+// document.getElementById('orange').onclick = function(){
+//     document.body.style.backgroundColor = 'orange';
+// }
+// document.getElementById('green').onclick = function(){
+//     document.body.style.backgroundColor = 'green';
+// }
+
+// Example 5: Using closures to create parameterized event handlers
+// function clickHandler(color){
+//     // Returns a function that remembers the 'color' argument
+//     return function (){
+//         document.body.style.backgroundColor = `${color}`;
+//     }
+// }
+// document.getElementById('orange').onclick = clickHandler('orange');
+// document.getElementById('green').onclick = clickHandler('green');
+
+/*
+Key Explanations:
+- Closures allow functions to "remember" variables from their parent scope, even after the parent has finished.
+- Useful for data privacy, callbacks, event handlers, and maintaining state.
+- Common pitfall: If you use a loop to assign handlers without closures, all handlers might share the same variable value (classic closure bug).
+- For interviews: Be ready to explain closures, how they work, and why they're useful for things like data privacy and event handling.
+- Time/space complexity: Closures can increase memory usage if they capture large objects, but are O(1) for simple variables.
+*/
+</script>
+</html>

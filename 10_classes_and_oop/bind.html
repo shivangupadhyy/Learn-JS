@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <button>Button Clicked</button>
+</body>
+<script>
+   
+    <!-- Notes and explanations for interview and new learners:
+This example demonstrates how to use the .bind() method to ensure the correct 'this' context in event handlers, especially in classes.
+
+
+<script>
+    // Define a class named React
+    class React{
+        constructor(){
+            this.library = "React"; // Property of the class
+            this.server = "https://localhost:3000"; // Another property
+
+            // Add a click event listener to the button
+            // Use .bind(this) to ensure 'this' inside handleClick refers to the class instance
+            document
+            .querySelector('button')
+            .addEventListener('click', this.handleClick.bind(this))
+        }
+        handleClick(){
+            // This method will be called when the button is clicked
+            // 'this' refers to the class instance because of .bind(this)
+            console.log("button clicked")
+            console.log(this.server) // Accesses the server property of the class
+        }
+    }
+
+    // Create an instance of the React class
+    const app = new React()
+</script>
+
+
+Key Explanations:
+- In JavaScript classes, 'this' inside event handlers can lose its context (not refer to the class instance).
+- .bind(this) ensures that 'this' inside handleClick always refers to the class instance, not the button or global object.
+- This is a common pattern in React and other frameworks to avoid bugs with 'this' in callbacks.
+- Always use .bind(this) (or arrow functions) when passing class methods as event handlers.
+- This example is useful for understanding event handling, class context, and the use of .bind().
+-->
+</script>
+</html> 

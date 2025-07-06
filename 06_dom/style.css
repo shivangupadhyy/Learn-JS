@@ -1,0 +1,20 @@
+ body {
+       background-color: #212121;
+        }
+ 
+ 
+ .parent {
+            display: flex;
+            flex-wrap: wrap;
+            width: 305px;
+            border: 1px solid black;
+        }
+        .day {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            background-color: cadetblue;
+        }
