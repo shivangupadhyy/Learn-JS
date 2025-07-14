@@ -38,20 +38,26 @@
 
 // getData();
 
-const p =new Promise((Resolve, Reject)=>{
+const p1 =new Promise((Resolve, Reject)=>{
     setTimeout(() => {
         Resolve("Promise Resolved value!")
-    }, 2000);
+    }, 5000);
+})
+
+const p2 =new Promise((Resolve, Reject)=>{
+    setTimeout(() => {
+        Resolve("Promise Resolved value!")
+    }, 10000);
 })
 
 async function handlepromise(){
     console.log("Hello world")
     //js engine was waiting for promise to resolve
-    const val = await p;
+    const val = await p1;
 console.log("Namste Javascript")
     console.log(val)
 
-    const val2 = await p;
+    const val2 = await p2;
     console.log("Namaste javascript")
     console.log(val2)
 }
